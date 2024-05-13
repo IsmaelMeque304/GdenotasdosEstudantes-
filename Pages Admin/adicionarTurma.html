@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <title>Administrar Turmas</title>
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+
+  <link rel="stylesheet" href="./css/templatem.css">
+
+  <style>
+
+.main-banner {
+ 
+  padding: 125px 0px;
+}
+         /* Estilo do formulário */
+.features {
+  background-color: #fff; /* Adicionando fundo branco */
+  padding: 30px; /* Espaçamento interno */
+  border-radius: 15px; /* Borda arredondada */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  max-width: 400px; /* Tamanho máximo */
+  margin: 0 auto; /* Centralizar */
+}
+
+.features .center{
+         color: #000;
+}
+
+.form-label{
+         color: #000;
+}
+
+.features h3 {
+  text-align: center; /* Centralizar título */
+  margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.features .container {
+  text-align: left; /* Centralizar conteúdo */
+}
+
+.features form {
+  max-width: 300px; /* Tamanho máximo do formulário */
+  margin: 0 auto; /* Centralizar formulário */
+}
+
+.features .form-label {
+  font-weight: bold; /* Deixar rótulos em negrito */
+}
+
+.features .form-control {
+  width: 100%; /* Largura total */
+  margin-bottom: 15px; /* Espaçamento abaixo dos campos */
+}
+
+.features .btn-primary {
+  width: 100%; /* Largura total do botão */
+}
+
+/* Estilizando os erros */
+.features .text-danger {
+  font-size: 12px; /* Tamanho da fonte */
+  margin-top: 3px; /* Espaçamento acima do texto de erro */
+}
+
+.features .form-control::placeholder {
+  font-size: 12px; /* Tamanho do placeholder */
+}
+
+
+.features .item {
+  padding: 35px;
+  margin-top: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 25px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.features .item h4 {
+  font-size: 17px;
+  margin-top: 25px;
+  
+}
+
+.features .item .image {
+  width: 90px;
+  height: 90px;
+  display: inline-block;
+  text-align: center;
+  line-height: 90px;
+  background-color: #415d7e;
+  border-radius: 50%;
+  transition: all .3s;
+}
+
+.features .item:hover .image {
+  background-color: #213041;
+}
+
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img src="assets/images/Universidade_Ensino_Superior_Logo-removebg-preview.png" alt=""
+                style="width: 158px; margin-top: -40px;">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <p class="admin-info">Administrador: <span>Mariano Dias</span></p>
+              <li><a href="administrarTurmas.html">Voltar</a></li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="main-banner">
+    <div class="container">
+      <div class="row">
+        <!-- Conteúdo anterior aqui -->
+      </div>
+    </div>
+  
+    <div class="features">
+      <h3><span class="center">Adicionar Turma</span></h3>
+      <hr>
+      <div class="container">
+        <!-- Formulário adicionado -->
+        <form method="post" action="CriarDisciplina">
+          <div class="mb-1">
+            <label for="classe" class="form-label">Classe</label>
+            <input type="number" name="classe" class="form-control" id="classe" placeholder="ex: (10),(11),(12)">
+            <div id="classeError" class="text-danger"></div>
+          </div>
+          <div class="mb-3">
+            <label for="turma" class="form-label">Turma</label>
+            <input type="text" name="turma" class="form-control" id="turma" placeholder="ex: (A),(B),(C)">
+            <div id="turmaError" class="text-danger"></div>           
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Salvar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>
