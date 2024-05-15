@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>Nota Do Estudante</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- MDB UI Kit script -->
+    <script src="https://cdn.jsdelivr.net/npm/mdb-ui-kit@3.2.0/dist/js/mdb.min.js"></script>
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="./css/templatem.css">
+
+    <style>
+        body {
+            overflow-y: hidden;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .features {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            max-width: 1180px;
+            margin: 0 auto;
+        }
+
+        .features .center {
+            color: #000;
+        }
+
+        .features h3 {
+            text-align: left;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .features table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .features th,
+        .features td {
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+            color: #000;
+        }
+
+        .features th {
+            background-color: #f2f2f2;
+        }
+        .table-container {
+            max-height: 400px;
+            /* Altura máxima */
+            overflow-y: auto;
+        }
+        .fixed-header thead {
+            position: sticky;
+            top: 0;
+            background-color: #f2f2f2;
+        }
+
+        @media (max-width: 768px) {
+            .search-bar input[type="text"] {
+                width: 50%;
+            }
+
+            .btn {
+                margin-bottom: 8px;
+            }
+        }
+
+        @media (max-width: 990px) {
+            .search-bar input[type="text"] {
+                width: 60%;
+            }
+
+            .btn {
+                margin-bottom: 8px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .search-bar input[type="text"] {
+                width: 100%;
+            }
+
+            .btn {
+                margin-bottom: 8px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            <img src="assets/images/Universidade_Ensino_Superior_Logo-removebg-preview.png" alt=""
+                                style="width: 158px; margin-top: -40px;">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <p class="admin-info">Estudante: <span>Carlos Dias</span></p>
+                            <li><a href="#" style="  font-weight: bold;">Imprimir Pauta</a></li>
+                            <li><a href="#">Voltar</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+    <div class="main-banner">
+
+        <div class="features">
+            <h3><span class="center">Nota do Estudante</span> </h3>
+            <hr>
+            <div class="container table-container">
+                <table class="table fixed-header">
+                    <thead>
+                        <tr>
+                            <th>Id-Disciplina</th>
+                            <th>Disciplina</th>
+                            <th>Avaliação 1</th>
+                            <th>Avaliação 2</th>
+                            <th>Avaliação 3</th>
+                            <th>AP</th>
+                            <th>Média</th>
+                            <th>Observação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Ingles</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                            <td>Excluido</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/counter.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+
+
+</body>
+
+</html>
